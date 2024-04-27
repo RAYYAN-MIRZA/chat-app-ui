@@ -1,1 +1,22 @@
-<p>chat-window works!</p>
+<main>
+  <div *ngIf="ischatopen; else elseBlock">
+    <h3>chat-window works!</h3>
+  </div>
+  <ng-template #elseBlock>
+    <div class="chat-container">
+        <h3>
+          Content to render when condition is false.
+        </h3>    
+        <div class="chatting-user-info">
+          current chatting user
+        </div>
+          <div class="main-chat-box">
+                all chat history--yaha chats render hongi
+          </div>
+          <div class="input-message-box">
+            <input placeholder="type message" type="text" name="" id="">
+            <button>send </button>
+          </div>        
+      </div>
+  </ng-template>
+</main>
