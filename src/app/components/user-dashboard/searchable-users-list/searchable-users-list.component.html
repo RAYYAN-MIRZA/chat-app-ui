@@ -1,7 +1,7 @@
-<p>searchable-users-list works!</p>
+<p>searchable-users-list component!</p>
 <input placeholder="filter by name" type="text">
 <div class="all-users-container">
-    <div (click)="on_user_click(user)" class="user-box" *ngFor="let user of dummy_users">
+    <div (click)="on_user_click()" class="user-box" *ngFor="let user of dummy_users">
         {{ user }}
     </div>
 </div>

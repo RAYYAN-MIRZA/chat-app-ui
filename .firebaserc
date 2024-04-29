@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "chap-app-c2fb1": {
+      "hosting": {
+        "chat-app-ui": [
+          "chap-app-c2fb1"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "chap-app-c2fb1"
+  }
+}

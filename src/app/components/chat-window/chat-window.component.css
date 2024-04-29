@@ -1,9 +1,11 @@
 main{
     display: flex;
-    text-align: center;
     justify-content: center;    
     align-items: center;
     border: 2px solid blue;
+    height: 100%;
+    width: 100%;
+    flex:10;
 }
 div{
     width: 100%;    

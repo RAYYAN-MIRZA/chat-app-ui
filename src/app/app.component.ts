@@ -12,11 +12,18 @@ import { ChatWindowComponent } from './components/chat-window/chat-window.compon
 })
 export class AppComponent {
   title = 'chat-app-ui';
-  private subject = webSocket('ws://localhost:8080');
+  backend:string='ws://localhost:5083';
+  node_js_server:string='ws://localhost:8080/'
+  private subject = webSocket(this.backend);
   constructor() {
     // this.subject.subscribe();
     this.subject.subscribe({
-      next: msg => console.log('message received: ' ,msg), // Called whenever there is a message from the server.
+      next: msg =>{
+       
+       console.log('message received: + ' , msg)
+      }, // Called whenever there is a message from the server.
+
+        
       error: err => console.log(err), // Called if at any point WebSocket API signals some kind of error.
       complete: () => console.log('complete or connection closed') // Called when connection is closed (for whatever reason).
     });

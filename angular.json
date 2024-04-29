@@ -88,6 +88,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "chat-app-ui:build:production",
+              "serveTarget": "chat-app-ui:serve:production"
+            },
+            "development": {
+              "buildTarget": "chat-app-ui:build:development",
+              "serveTarget": "chat-app-ui:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

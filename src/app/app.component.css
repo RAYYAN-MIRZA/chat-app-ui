@@ -1,7 +1,4 @@
 main{
     border: 2px solid lime;
     display: flex;
-    /* justify-content: space-evenly; */
-    justify-content: space-around;
-    align-items: center;
 }
