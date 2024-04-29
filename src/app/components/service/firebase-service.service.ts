@@ -8,12 +8,12 @@ import { getDatabase,ref } from 'firebase/database';
 })
 export class FirebaseServiceService {
   private firebaseConfig = {
-    apiKey: 'AIzaSyBvonX4WEX3ezCGpZVYz2n-7u6ojrP49i0',
-    authDomain: 'chap-app-c2fb1.firebaseapp.com',
-    projectId: 'chap-app-c2fb1',
-    storageBucket: 'chap-app-c2fb1.appspot.com',
-    messagingSenderId: '839592872747',
-    appId: '1:839592872747:web:4bdebf09dbe71e2585136e',
+    apiKey: '',
+    authDomain: '',
+    projectId: '',
+    storageBucket: '',
+    messagingSenderId: '',
+    appId: '',
   };
   // Initialize Firebase app
   private firebaseApp = initializeApp(this.firebaseConfig);
